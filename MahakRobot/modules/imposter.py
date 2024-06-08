@@ -2,8 +2,8 @@ import random
 
 from pyrogram import filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message 
-from Mahakxbot.modules.pretenderdb import impo_off, impo_on, check_pretender, add_userdata, get_userdata, usr_data
-from Mahakxbot import pbot as app
+from MahakRobot.modules.pretenderdb import impo_off, impo_on, check_pretender, add_userdata, get_userdata, usr_data
+from MahakRobot import pbot as app
 
 MISHI = [
     "https://graph.org/file/f86b71018196c5cfe7344.jpg",
