@@ -3,10 +3,10 @@ import asyncio
 from pyrogram import filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
-from Mahakxbot import OWNER_ID, pbot
-from Mahakxbot.utils.admins import can_change_info
-from Mahakxbot.utils.errors import capture_err
-from Mahakxbot.utils.mongo import (
+from MahakRobot import OWNER_ID, pbot
+from MahakRobot.utils.admins import can_change_info
+from MahakRobot.utils.errors import capture_err
+from MahakRobot.utils.mongo import (
     alpha_to_int,
     get_karma,
     get_karmas,
