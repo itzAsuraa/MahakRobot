@@ -2,7 +2,7 @@ import logging
 import random
 import requests
 from telethon import events
-from Mahakxbot import telethn as meow
+from MahakRobot import telethn as meow
 
 logging.basicConfig(level=logging.DEBUG)
 
