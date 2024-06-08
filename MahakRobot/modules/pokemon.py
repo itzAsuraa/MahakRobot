@@ -1,6 +1,6 @@
 from pyrogram import Client, filters
 import requests
-from Mahakxbot import pbot as app
+from MahakRobot import pbot as app
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 from pyrogram.enums import ChatAction, ParseMode
 
