@@ -5,9 +5,9 @@ import requests
 from telegram import ParseMode, Update
 from telegram.ext import CallbackContext
 
-from Mahakxbot import StartTime, dispatcher
-from Mahakxbot.modules.disable import DisableAbleCommandHandler
-from Mahakxbot.modules.helper_funcs.chat_status import sudo_plus
+from MahakRobot import StartTime, dispatcher
+from MahakRobot.modules.disable import DisableAbleCommandHandler
+from MahakRobot.modules.helper_funcs.chat_status import sudo_plus
 
 sites_list = {
     "Telegram": "https://api.telegram.org",
