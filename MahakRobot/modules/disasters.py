@@ -7,7 +7,7 @@ from telegram import ParseMode, TelegramError, Update
 from telegram.ext import CallbackContext, CommandHandler
 from telegram.utils.helpers import mention_html
 
-from Mahakxbot import (
+from MahakRobot import (
     DEMONS,
     DEV_USERS,
     DRAGONS,
@@ -17,15 +17,15 @@ from Mahakxbot import (
     WOLVES,
     dispatcher,
 )
-from Mahakxbot.modules.helper_funcs.chat_status import (
+from MahakRobot.modules.helper_funcs.chat_status import (
     dev_plus,
     sudo_plus,
     whitelist_plus,
 )
-from Mahakxbot.modules.helper_funcs.extraction import extract_user
+from MahakRobot.modules.helper_funcs.extraction import extract_user
 from Mahakxbot.modules.log_channel import gloggable
 
-ELEVATED_USERS_FILE = os.path.join(os.getcwd(), "Mahakxbot/elevated_users.json")
+ELEVATED_USERS_FILE = os.path.join(os.getcwd(), "MahakRobot/elevated_users.json")
 
 
 def check_user_id(user_id: int, context: CallbackContext) -> Optional[str]:
