@@ -12,7 +12,7 @@ from telethon.tl.custom import Message
 from telethon.tl.types import MessageService
 from telethon.utils import get_display_name, get_peer_id
 
-from AvishaRobot.events import register
+from MahakRobot.events import register
 
 ##api
 
