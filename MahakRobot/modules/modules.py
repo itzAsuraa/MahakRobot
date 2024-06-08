@@ -16,7 +16,7 @@ from MahakRobot.__main__ import (
     USER_INFO,
     USER_SETTINGS,
 )
-from Mahakxbot.modules.helper_funcs.chat_status import dev_plus, sudo_plus
+from MahakRobot.modules.helper_funcs.chat_status import dev_plus, sudo_plus
 
 
 @dev_plus
