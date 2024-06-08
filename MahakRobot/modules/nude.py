@@ -2,7 +2,7 @@ import requests
 from pyrogram import filters
 from pyrogram.types import Message,InlineKeyboardButton,InlineKeyboardMarkup
 from pyrogram.enums import *
-from Mahakxbot import pbot as app
+from MahakRobot import pbot as app
 
 EVAA = [
     [
