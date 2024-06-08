@@ -1,7 +1,7 @@
 
 from pyrogram import Client, filters
 from faker import Faker
-from Mahakxbot import pbot as app
+from MahakRobot import pbot as app
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 fake = Faker()
