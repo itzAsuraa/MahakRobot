@@ -1,9 +1,9 @@
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update
 from telegram.ext import CallbackContext, CommandHandler, Filters
 
-from Mahakxbot import dispatcher
-from Mahakxbot.modules.disable import DisableAbleCommandHandler
-from Mahakxbot.modules.helper_funcs.chat_status import user_admin
+from MahakRobot import dispatcher
+from MahakRobot.modules.disable import DisableAbleCommandHandler
+from MahakRobot.modules.helper_funcs.chat_status import user_admin
 
 MARKDOWN_HELP = f"""
 ⬤ ᴍᴀʀᴋᴅᴏᴡɴ ɪs ᴀ ᴠᴇʀʏ ᴘᴏᴡᴇʀғᴜʟ ғᴏʀᴍᴀᴛᴛɪɴɢ ᴛᴏᴏʟ sᴜᴘᴘᴏʀᴛᴇᴅ ʙʏ ᴛᴇʟᴇɢʀᴀᴍ. {dispatcher.bot.first_name} ʜᴀs sᴏᴍᴇ ᴇɴʜᴀɴᴄᴇᴍᴇɴᴛs, ᴛᴏ ᴍᴀᴋᴇ sᴜʀᴇ ᴛʜᴀᴛ \n
