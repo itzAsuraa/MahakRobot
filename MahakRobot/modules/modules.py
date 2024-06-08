@@ -4,8 +4,8 @@ import importlib
 from telegram import ParseMode, Update
 from telegram.ext import CallbackContext, CommandHandler
 
-from Mahakxbot import dispatcher, telethn
-from Mahakxbot.__main__ import (
+from MahakRobot import dispatcher, telethn
+from MahakRobot.__main__ import (
     CHAT_SETTINGS,
     DATA_EXPORT,
     DATA_IMPORT,
