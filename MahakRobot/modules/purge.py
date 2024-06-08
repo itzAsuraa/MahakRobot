@@ -2,8 +2,8 @@ import time
 
 from telethon import events
 
-from Mahakxbot import telethn,pbot
-from Mahakxbot.modules.helper_funcs.telethn.chatstatus import (
+from MahakRobot import telethn,pbot
+from MahakRobot.modules.helper_funcs.telethn.chatstatus import (
     can_delete_messages,
     user_is_admin,
 )
