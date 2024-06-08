@@ -1,11 +1,11 @@
 import random, requests, time
-from Mahakxbot import telethn as asst
-from Mahakxbot import pbot
+from MahakRobot import telethn as asst
+from MahakRobot import pbot
 from telethon import Button, events
-from Mahakxbot.events import register
+from MahakRobot.events import register
 from pyrogram import filters
 from pyrogram.types import *
-from Mahakxbot import SUPPORT_CHAT
+from MahakRobot import SUPPORT_CHAT
 
 @pbot.on_message(filters.command("wish"))
 async def wish(_, m):
