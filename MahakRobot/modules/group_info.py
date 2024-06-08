@@ -1,6 +1,6 @@
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message 
-from Mahakxbot import pbot as app
+from MahakRobot import pbot as app
 
 EVAA = [
     [
