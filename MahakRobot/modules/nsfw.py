@@ -9,11 +9,11 @@ from telegram.error import BadRequest, RetryAfter, Unauthorized
 from telegram.ext import CallbackContext, CommandHandler, run_async
 from telegram.utils.helpers import mention_html
 
-import Mahakxbot.modules.sql.nsfw_sql as sql
-from Mahakxbot import dispatcher
-from Mahakxbot.modules.helper_funcs.chat_status import user_admin
-from Mahakxbot.modules.helper_funcs.filters import CustomFilters
-from Mahakxbot.modules.log_channel import gloggable
+import MahakRobot.modules.sql.nsfw_sql as sql
+from MahakRobot import dispatcher
+from MahakRobot.modules.helper_funcs.chat_status import user_admin
+from MahakRobot.modules.helper_funcs.filters import CustomFilters
+from MahakRobot.modules.log_channel import gloggable
 
 
 @run_async
