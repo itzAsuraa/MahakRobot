@@ -7,10 +7,10 @@ from pykeyboard import InlineKeyboard
 from pyrogram import filters
 from pyrogram.types import InlineKeyboardButton
 
-from Mahakxbot import aiohttpsession as session
-from Mahakxbot import pbot as app
-from Mahakxbot.utils.errors import capture_err
-from Mahakxbot.utils.pastebin import paste
+from MahakRobot import aiohttpsession as session
+from MahakRobot import pbot as app
+from MahakRobot.utils.errors import capture_err
+from MahakRobot.utils.pastebin import paste
 
 pattern = re.compile(r"^text/|json$|yaml$|xml$|toml$|x-sh$|x-shellscript$")
 
