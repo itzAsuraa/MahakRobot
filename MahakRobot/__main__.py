@@ -832,8 +832,8 @@ def Music_about_callback(update: Update, context: CallbackContext):
             ),
         )
     elif query.data == "Music_roy_admin":
-        query.message.edit_caption(f"*✿ ꜱᴘᴀᴍ  ᴄᴏᴍᴍᴀɴᴅꜱ ✿*"
-            f"""\n\n ᴄᴏᴍᴍɪᴍɢ sᴏᴏɴ,
+        query.message.edit_caption(f"*✿ ᴄᴏᴍᴍᴀɴᴅꜱ ✿*"
+            f"""\n\n ᴄᴏᴍᴍɪᴍɢ sᴏᴏɴ"""
             parse_mode=ParseMode.MARKDOWN,
             
             reply_markup=InlineKeyboardMarkup(
@@ -845,7 +845,7 @@ def Music_about_callback(update: Update, context: CallbackContext):
             ),
         )
     elif query.data == "Music_roy_play":
-        query.message.edit_caption(f"*✿ ʀᴀɪᴅ ᴄᴏᴍᴍᴀɴᴅꜱ ✿*"
+        query.message.edit_caption(f"*✿ ᴄᴏᴍᴍᴀɴᴅꜱ ✿*"
             f"""\n\n ᴄᴏᴍᴍɪɴɢ sᴏᴏɴ""",
             parse_mode=ParseMode.MARKDOWN,
             
