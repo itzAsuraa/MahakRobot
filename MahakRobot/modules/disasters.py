@@ -23,7 +23,7 @@ from MahakRobot.modules.helper_funcs.chat_status import (
     whitelist_plus,
 )
 from MahakRobot.modules.helper_funcs.extraction import extract_user
-from Mahakxbot.modules.log_channel import gloggable
+from MahakRobot.modules.log_channel import gloggable
 
 ELEVATED_USERS_FILE = os.path.join(os.getcwd(), "MahakRobot/elevated_users.json")
 
