@@ -3,8 +3,8 @@ import textwrap
 
 from PIL import Image, ImageDraw, ImageFont
 
-from Mahakxbot import telethn as bot
-from Mahakxbot.events import register
+from MahakRobot import telethn as bot
+from MahakRobot.events import register
 
 
 @register(pattern="^/mmf ?(.*)")
@@ -62,7 +62,7 @@ async def drawText(image_path, text):
 
     else:
 
-        fnt = "./Mahakxbot/resources/default.ttf"
+        fnt = "./MahakRobot/resources/default.ttf"
 
     m_font = ImageFont.truetype(fnt, int((70 / 640) * i_width))
 
