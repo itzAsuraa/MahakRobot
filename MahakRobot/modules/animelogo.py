@@ -26,7 +26,7 @@ async def logo(app, msg: Message):
     req = requests.get(API).url
     await msg.reply_photo(
         photo=f"{req}",
-        caption=f"❖ ᴀɴɪᴍᴇ ʟᴏɢᴏ ʙʏ ➥ [๛ᴀ ᴠ ɪ s ʜ ᴀ ࿐](https://t.me/the_friendz)",
+        caption=f"❖ ᴀɴɪᴍᴇ ʟᴏɢᴏ ʙʏ ➥ [˹ ᴍᴀʜᴀᴋ ꭙ ʀᴏʙᴏᴛ™ ♡゙](https://t.me/mahakxbot)",
         reply_markup=InlineKeyboardMarkup(button),
     )
 
