@@ -6,7 +6,7 @@ from pymongo import MongoClient
 from pyrogram import filters
 from pyrogram.types import Message
 
-from Mahakxbot import pbot as app
+from MahakRobot import pbot as app
 
 
 user_last_message_time = {}
