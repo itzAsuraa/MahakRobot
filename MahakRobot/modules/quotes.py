@@ -1,5 +1,5 @@
 import random, asyncio
-from Mahakxbot import pbot
+from MahakRobot import pbot
 from pyrogram import filters
 
 
