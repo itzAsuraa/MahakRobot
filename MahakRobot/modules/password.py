@@ -1,6 +1,6 @@
 import random, os
 from pyrogram import Client, filters, enums 
-from Mahakxbot import pbot as app
+from MahakRobot import pbot as app
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 
