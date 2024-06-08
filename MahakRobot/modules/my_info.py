@@ -5,9 +5,9 @@ from datetime import datetime
 
 from telethon import custom, events
 
-from Mahakxbot import telethn as bot,BOT_NAME
-from Mahakxbot import telethn as tgbot
-from Mahakxbot.events import register
+from MahakRobot import telethn as bot,BOT_NAME
+from MahakRobot import telethn as tgbot
+from MahakRobot.events import register
 
 edit_time = 5
 f""" ======================={BOT_NAME}====================== """
