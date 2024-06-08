@@ -3,9 +3,9 @@ import json
 import requests
 from telegram.ext import CommandHandler, run_async
 
-from Mahakxbot import dispatcher
-from Mahakxbot.modules.helper_funcs.alternate import send_message
-from Mahakxbot.modules.helper_funcs.chat_status import user_admin
+from MahakRobot import dispatcher
+from MahakRobot.modules.helper_funcs.alternate import send_message
+from MahakRobot.modules.helper_funcs.chat_status import user_admin
 
 
 @run_async
