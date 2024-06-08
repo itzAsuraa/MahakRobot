@@ -12,9 +12,9 @@ from telegram.ext import (
 )
 from telegram.utils.helpers import escape_markdown
 
-from Mahakxbot import dispatcher
-from Mahakxbot.modules.helper_funcs.handlers import CMD_STARTERS, SpamChecker
-from Mahakxbot.modules.helper_funcs.misc import is_module_loaded
+from MahakRobot import dispatcher
+from MahakRobot.modules.helper_funcs.handlers import CMD_STARTERS, SpamChecker
+from MahakRobot.modules.helper_funcs.misc import is_module_loaded
 
 FILENAME = __name__.rsplit(".", 1)[-1]
 
