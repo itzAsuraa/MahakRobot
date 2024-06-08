@@ -8,8 +8,8 @@ from contextlib import redirect_stdout
 from telegram import ParseMode, Update
 from telegram.ext import CallbackContext, CommandHandler
 
-from Mahakxbot import LOGGER, dispatcher,OWNER_ID
-from Mahakxbot.modules.helper_funcs.chat_status import dev_plus
+from MahakRobot import LOGGER, dispatcher,OWNER_ID
+from MahakRobot.modules.helper_funcs.chat_status import dev_plus
 
 namespaces = {}
 
