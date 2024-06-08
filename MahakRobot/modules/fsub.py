@@ -3,13 +3,13 @@ from telethon.errors import ChatAdminRequiredError
 from telethon.errors.rpcerrorlist import UserNotParticipantError
 from telethon.tl.functions.channels import GetParticipantRequest
 
-from Mahakxbot import BOT_ID
-from Mahakxbot import DRAGONS as DEVS
-from Mahakxbot import OWNER_ID
-from Mahakxbot import telethn as Avisha
-from Mahakxbot.events import Avishainline
-from Mahakxbot.events import register as Avishabot
-from Mahakxbot.modules.no_sql import fsub_db as db
+from MahakRobot import BOT_ID
+from MahakRobot import DRAGONS as DEVS
+from MahakRobot import OWNER_ID
+from MahakRobot import telethn as Avisha
+from MahakRobot.events import Avishainline
+from MahakRobot.events import register as Avishabot
+from MahakRobot.modules.no_sql import fsub_db as db
 
 
 async def is_admin(chat_id, user_id):
