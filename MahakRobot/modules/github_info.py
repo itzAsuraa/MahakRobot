@@ -1,8 +1,8 @@
 from aiohttp import ClientSession
 from pyrogram import filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
-from Mahakxbot import pbot
-from Mahakxbot.utils.errors import capture_err
+from MahakRobot import pbot
+from MahakRobot.utils.errors import capture_err
 
 
 @pbot.on_message(filters.command(["github","git"]))
