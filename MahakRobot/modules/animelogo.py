@@ -4,13 +4,13 @@ from pyrogram import Client, filters, idle
 import pyrogram, asyncio, random, time
 from pyrogram.errors import FloodWait
 import requests
-from AvishaRobot import pbot as app
+from MahakRobot import pbot as app
 from pyrogram.types import *
 
 button = [
        [
             InlineKeyboardButton(
-                text="ᴀᴅᴅ ᴍᴇ ʙᴀʙʏ", url=f"https://t.me/AvishaXbot?startgroup=true",
+                text="ᴀᴅᴅ ᴍᴇ ʙᴀʙʏ", url=f"https://t.me/MahakXbot?startgroup=true",
             )
         ]
 ]
