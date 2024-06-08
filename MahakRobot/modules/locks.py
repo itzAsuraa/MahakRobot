@@ -13,12 +13,12 @@ from telegram.error import BadRequest
 from telegram.ext import CommandHandler, Filters, MessageHandler
 from telegram.utils.helpers import mention_html
 
-import Mahakxbot.modules.sql.locks_sql as sql
-from Mahakxbot import DRAGONS, LOGGER, dispatcher
-from Mahakxbot.modules.connection import connected
-from Mahakxbot.modules.disable import DisableAbleCommandHandler
-from Mahakxbot.modules.helper_funcs.alternate import send_message, typing_action
-from Mahakxbot.modules.helper_funcs.chat_status import (
+import MahakRobot.modules.sql.locks_sql as sql
+from MahakRobot import DRAGONS, LOGGER, dispatcher
+from MahakRobot.modules.connection import connected
+from MahakRobot.modules.disable import DisableAbleCommandHandler
+from MahakRobot.modules.helper_funcs.alternate import send_message, typing_action
+from MahakRobot.modules.helper_funcs.chat_status import (
     can_delete,
     is_bot_admin,
     is_user_admin,
