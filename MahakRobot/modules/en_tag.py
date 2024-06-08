@@ -1,4 +1,4 @@
-from Mahakxbot import pbot as app 
+from MahakRobot import pbot as app 
 import asyncio
 import random
 from pyrogram import Client, filters
