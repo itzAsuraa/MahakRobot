@@ -13,8 +13,8 @@ from telegram.ext import (
 )
 from telegram.utils.helpers import mention_html
 
-import Mahakxbot.modules.sql.global_bans_sql as sql
-from Mahakxbot import (
+import MahakRobot.modules.sql.global_bans_sql as sql
+from MahakRobot import (
     DEMONS,
     DEV_USERS,
     DRAGONS,
@@ -26,17 +26,17 @@ from Mahakxbot import (
     WOLVES,
     dispatcher,
 )
-from Mahakxbot.modules.helper_funcs.chat_status import (
+from MahakRobot.modules.helper_funcs.chat_status import (
     is_user_admin,
     support_plus,
     user_admin,
 )
-from Mahakxbot.modules.helper_funcs.extraction import (
+from MahakRobot.modules.helper_funcs.extraction import (
     extract_user,
     extract_user_and_text,
 )
-from Mahakxbot.modules.helper_funcs.misc import send_to_list
-from Mahakxbot.modules.sql.users_sql import get_user_com_chats
+from MahakRobot.modules.helper_funcs.misc import send_to_list
+from MahakRobot.modules.sql.users_sql import get_user_com_chats
 
 GBAN_ENFORCE_GROUP = 6
 
