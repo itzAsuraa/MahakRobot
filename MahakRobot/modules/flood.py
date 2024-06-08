@@ -13,19 +13,19 @@ from telegram.ext import (
 )
 from telegram.utils.helpers import mention_html
 
-from Mahakxbot import TIGERS, WOLVES, dispatcher
-from Mahakxbot.modules.connection import connected
-from Mahakxbot.modules.helper_funcs.alternate import send_message
-from Mahakxbot.modules.helper_funcs.chat_status import (
+from MahakRobot import TIGERS, WOLVES, dispatcher
+from MahakRobot.modules.connection import connected
+from MahakRobot.modules.helper_funcs.alternate import send_message
+from MahakRobot.modules.helper_funcs.chat_status import (
     bot_admin,
     is_user_admin,
     user_admin,
     user_admin_no_reply,
 )
-from Mahakxbot.modules.helper_funcs.string_handling import extract_time
-from Mahakxbot.modules.log_channel import loggable
-from Mahakxbot.modules.sql import antiflood_sql as sql
-from Mahakxbot.modules.sql.approve_sql import is_approved
+from MahakRobot.modules.helper_funcs.string_handling import extract_time
+from MahakRobot.modules.log_channel import loggable
+from MahakRobot.modules.sql import antiflood_sql as sql
+from MahakRobot.modules.sql.approve_sql import is_approved
 
 FLOOD_GROUP = 3
 
