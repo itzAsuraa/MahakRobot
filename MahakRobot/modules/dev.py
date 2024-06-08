@@ -17,7 +17,7 @@ from MahakRobot.modules.helper_funcs.chat_status import dev_plus
 def allow_groups(update: Update, context: CallbackContext):
     args = context.args
     if not args:
-        update.effective_message.reply_text(f"❖ ᴄᴜʀʀᴇɴᴛ sᴛᴀᴛᴇ ᴏғ ᴀᴠɪsʜᴀ ❖ {MahakRobot.ALLOW_CHATS}")
+        update.effective_message.reply_text(f"❖ ᴄᴜʀʀᴇɴᴛ sᴛᴀᴛᴇ ᴏғ ᴍᴀʜᴀᴋ ❖ {MahakRobot.ALLOW_CHATS}")
         return
     if args[0].lower() in ["off", "no"]:
         MahakRobot.ALLOW_CHATS = True
