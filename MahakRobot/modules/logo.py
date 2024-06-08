@@ -445,7 +445,7 @@ async def lego(event):
         img = Image.open(io.BytesIO(requests.get(randc).content))
         draw = ImageDraw.Draw(img)
         image_widthz, image_heightz = img.size
-        fnt = glob.glob("./Mahakxbot/resources/fonts/*")
+        fnt = glob.glob("./MahakRobot/resources/fonts/*")
         randf = random.choice(fnt)
         font = ImageFont.truetype(randf, 120)
         bbox= draw.textbbox((0,0),text, font=font)
