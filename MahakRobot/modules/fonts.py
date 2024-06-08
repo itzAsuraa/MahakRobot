@@ -1,8 +1,8 @@
 from pyrogram import  filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
-from Mahakxbot.utils.fonts import Fonts
-from Mahakxbot import pbot
+from MahakRobot.utils.fonts import Fonts
+from MahakRobot import pbot
 
 @pbot.on_message(filters.command(["font", "fonts"]))
 async def style_buttons(c, m, cb=False):
