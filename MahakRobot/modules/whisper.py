@@ -111,7 +111,7 @@ async def in_help():
         InlineQueryResultArticle(
             title="💌 ᴡʜɪsᴘᴇʀ",
             description=f"@Mahakxbot [USERNAME | ID] [TEXT]",
-            input_message_content=InputTextMessageContent(f"**⬤ ᴜsᴀɢᴇ ➥**\n\n@Mahakxbot (ᴛᴀʀɢᴇᴛ ᴜsᴇʀɴᴀᴍᴇ ᴏʀ ɪᴅ) (ʏᴏᴜʀ ᴍᴇssᴀɢᴇ).\n\n**๏ ᴇxᴀᴍᴘʟᴇ ➠**\n@AvishaxBot @username ɪ ᴡᴀɴɴᴀ ғᴜᴄᴋ ʏᴏᴜ"),
+            input_message_content=InputTextMessageContent(f"**⬤ ᴜsᴀɢᴇ ➥**\n\n@Mahakxbot (ᴛᴀʀɢᴇᴛ ᴜsᴇʀɴᴀᴍᴇ ᴏʀ ɪᴅ) (ʏᴏᴜʀ ᴍᴇssᴀɢᴇ).\n\n**๏ ᴇxᴀᴍᴘʟᴇ ➠**\n@MahakxBot @username ɪ ᴡᴀɴɴᴀ ғᴜᴄᴋ ʏᴏᴜ"),
             thumb_url="https://telegra.ph/file/21c69049c4855ac0a035b.jpg",
             reply_markup=switch_btn
         )
