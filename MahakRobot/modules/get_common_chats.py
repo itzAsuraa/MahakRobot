@@ -5,9 +5,9 @@ from telegram import Update
 from telegram.error import BadRequest, RetryAfter, Unauthorized
 from telegram.ext import CallbackContext, CommandHandler, Filters
 
-from Mahakxbot import OWNER_ID, dispatcher
-from Mahakxbot.modules.helper_funcs.extraction import extract_user
-from Mahakxbot.modules.sql.users_sql import get_user_com_chats
+from MahakRobot import OWNER_ID, dispatcher
+from MahakRobot.modules.helper_funcs.extraction import extract_user
+from MahakRobot.modules.sql.users_sql import get_user_com_chats
 
 
 def get_user_common_chats(update: Update, context: CallbackContext):
