@@ -2,7 +2,7 @@ import random
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, Message
 from pyrogram.errors import ChatAdminRequired, UserNotParticipant, ChatWriteForbidden
-from Mahakxbot import pbot as app
+from MahakRobot import pbot as app
 
 #--------------------------
 MUST_JOIN = "Ravan_Lankaa"
