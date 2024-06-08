@@ -545,7 +545,7 @@ def AvishaRobot_Main_Callback(update: Update, context: CallbackContext):
                         InlineKeyboardButton(text="ᴍᴜsɪᴄ", callback_data="Music_")
                     ],
                     [
-                        InlineKeyboardButton(text="ꜱᴘᴀᴍ", callback_data="Music_roy"),
+                        InlineKeyboardButton(text="ᴏᴛʜᴇʀ", callback_data="Music_roy"),
                         InlineKeyboardButton(text="ᴀɴɪᴍᴇ", callback_data="source_") 
                     ],
                     [
