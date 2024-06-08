@@ -1,6 +1,6 @@
 import secureme
 from pyrogram import filters
-from Mahakxbot import pbot as avisha
+from MahakRobot import pbot as avisha
 
 
 @avisha.on_message(filters.command("encrypt"))
