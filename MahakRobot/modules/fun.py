@@ -6,11 +6,11 @@ from telegram import ChatPermissions, ParseMode, Update
 from telegram.error import BadRequest
 from telegram.ext import CallbackContext
 
-import Mahakxbot.modules.fun_strings as fun_strings
-from Mahakxbot import dispatcher,OWNER_ID
-from Mahakxbot.modules.disable import DisableAbleCommandHandler
-from Mahakxbot.modules.helper_funcs.chat_status import is_user_admin
-from Mahakxbot.modules.helper_funcs.extraction import extract_user
+import MahakRobot.modules.fun_strings as fun_strings
+from MahakRobot import dispatcher,OWNER_ID
+from MahakRobot.modules.disable import DisableAbleCommandHandler
+from MahakRobot.modules.helper_funcs.chat_status import is_user_admin
+from MahakRobot.modules.helper_funcs.extraction import extract_user
 
 
 
