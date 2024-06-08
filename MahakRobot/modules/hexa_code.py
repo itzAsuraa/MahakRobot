@@ -1,6 +1,6 @@
 from pyrogram import Client, filters
-from Mahakxbot import pbot as app
-from Mahakxbot import BOT_USERNAME
+from MahakRobot import pbot as app
+from MahakRobot import BOT_USERNAME
 
 def hex_to_text(hex_string):
     try:
