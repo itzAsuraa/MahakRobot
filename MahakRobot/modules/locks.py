@@ -25,8 +25,8 @@ from MahakRobot.modules.helper_funcs.chat_status import (
     user_admin,
     user_not_admin,
 )
-from Mahakxbot.modules.log_channel import loggable
-from Mahakxbot.modules.sql.approve_sql import is_approved
+from MahakRobot.modules.log_channel import loggable
+from MahakRobot.modules.sql.approve_sql import is_approved
 
 ad = AlphabetDetector()
 
