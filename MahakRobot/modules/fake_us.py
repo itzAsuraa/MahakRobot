@@ -2,7 +2,7 @@ import requests
 from pyrogram import Client
 
 from pyrogram import filters
-from Mahakxbot import pbot as app
+from MahakRobot import pbot as app
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 EVAA = [
