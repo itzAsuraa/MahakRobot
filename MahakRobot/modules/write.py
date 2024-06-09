@@ -20,7 +20,7 @@ async def handwrite(_, message: Message):
     write = requests.get(f"https://apis.xditya.me/write?text={text}").url
 
     caption = f"""
-❖ ᴡʀɪᴛᴛᴇɴ ʙʏ ➥ [๛ᴀ ᴠ ɪ s ʜ ᴀ ࿐](https://t.me/mahakxbot)
+❖ ᴡʀɪᴛᴛᴇɴ ʙʏ ➥ [˹ ᴍᴀʜᴀᴋ ꭙ ʀᴏʙᴏᴛ™ ♡゙](https://t.me/mahakxbot)
 """
     await m.delete()
     await message.reply_photo(photo=write,caption=caption, reply_markup=InlineKeyboardMarkup(EVAA),)
