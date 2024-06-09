@@ -1,51 +1,51 @@
-from pyrogram import Client, filters
+import logging
 import os
-from pyrogram.types import *
-from pyrogram import filters
+import platform
+import psutil
+import time
+
+from pyrogram import Client, filters
+from pyrogram.types import CallbackQuery, InlineKeyboardButton, InlineKeyboardMarkup, Message
+from MahakRobot import BOT_USERNAME, OWNER_ID
 from MahakRobot import pbot as app
-from pyrogram.errors import FloodWait
 
-# -------------------------------
+# Constants
+FORBIDDEN_KEYWORDS = [
+    "porn", "xxx", "NCERT", "ncert", "ans", "Pre-Medical",
+    "kinematics", "Experiment", "experiments", "Ans", "jee",
+    "Allen", "pre-medical", "institute"
+]
 
-def time_formatter(milliseconds: float) -> str:
-    seconds, milliseconds = divmod(milliseconds, 1000)
-    minutes, seconds = divmod(seconds, 60)
-    hours, minutes = divmod(minutes, 60)
-    return f"{int(hours)}h {int(minutes)}m {int(seconds)}s"
-
-def size_formatter(bytes: int) -> str:
-    for unit in ['B', 'KB', 'MB', 'GB', 'TB']:
-        if bytes < 1024.0:
-            break
-        bytes /= 1024.0
-    return f"{bytes:.2f} {unit}"
-
-        
-#  -----------------------------------------------------------
-@app.on_edited_message(filters.group & ~filters.me)
-async def delete_edited_messages(client, edited_message):
-    await edited_message.delete()
-
-# ------------------------------------------------------------
-def delete_long_messages(_, m):
-    return len(m.text.split()) > 300
-
-@app.on_message(filters.group & filters.private & delete_long_messages)
-async def delete_and_reply(_, msg):
-    await msg.delete()
-    user_mention = msg.from_user.mention
-    await app.send_message(msg.chat.id, f"✦ ʜᴇʏ {user_mention} ʙᴀʙʏ, ᴘʟᴇᴀsᴇ ᴋᴇᴇᴘ ʏᴏᴜʀ ᴍᴇssᴀɢᴇ sʜᴏʀᴛ.")
-     #-----------------------------------------------------------
-
-async def delete_pdf_files(client, message):
-    if message.document and message.document.mime_type == "application/pdf":
-        warning_message = f"✦ ʜᴇʏ {user_mention} ᴅᴏɴ'ᴛ sᴇɴᴅ ᴘᴅғ ғɪʟᴇs ʙᴀʙʏ, ғᴏʀ ᴄᴏᴘʏʀɪɢʜᴛ ᴄʟɪᴍʙ."
-        await message.reply_text(warning_message)
+# Handle Forbidden Keywords
+@app.on_message(filters.text & filters.group)
+async def handle_message(_, message):
+    if any(keyword in message.text for keyword in FORBIDDEN_KEYWORDS):
+        logging.info(f"Deleting message with ID {message.id}")
         await message.delete()
-    else:  
-        pass
+        await message.reply_text(f"@{message.from_user.username} 𝖣𝗈𝗇'𝗍 𝗌𝖾𝗇𝖽 𝗇𝖾𝗑𝗍 𝗍𝗂𝗆𝖾!")
+    elif message.caption and any(keyword in message.caption for keyword in FORBIDDEN_KEYWORDS):
+        logging.info(f"Deleting message with ID {message.id}")
+        await message.delete()
+        await message.reply_text(f"@{message.from_user.username} 𝖣𝗈𝗇'𝗍 𝗌𝖾𝗇𝖽 𝗇𝖾𝗑𝗍 𝗍𝗂𝗆𝖾!")
 
-@app.on_message(filters.group & filters.document)
-async def message_handler(client, message):
-    await delete_pdf_files(client, message)
-  
+# Delete long edited messages but keep short messages and emoji reactions
+async def delete_long_edited_messages(client, edited_message: Message):
+    if edited_message.text and len(edited_message.text.split()) > 15:
+        await edited_message.delete()
+    elif edited_message.sticker or edited_message.animation:
+        return
+
+@app.on_edited_message(filters.group & ~filters.me)
+async def handle_edited_messages(_, edited_message: Message):
+    await delete_long_edited_messages(_, edited_message)
+
+# Delete long messages in groups and reply with a warning
+MAX_MESSAGE_LENGTH = 20  # Define the maximum allowed length for a message
+
+async def delete_long_messages(client, message: Message):
+    if message.text and len(message.text.split()) > MAX_MESSAGE_LENGTH:
+        await message.delete()
+
+@app.on_message(filters.group & ~filters.me)
+async def handle_messages(_, message: Message):
+    await delete_long_messages(_, message)
