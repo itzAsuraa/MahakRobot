@@ -833,7 +833,7 @@ def Music_about_callback(update: Update, context: CallbackContext):
         )
     elif query.data == "Music_roy_admin":
         query.message.edit_caption(f"*✿ ᴄᴏᴍᴍᴀɴᴅꜱ ✿*",
-            f"""\n\n ᴄᴏᴍᴍɪᴍɢ sᴏᴏɴ"""
+            f"""\n\n ᴄᴏᴍᴍɪᴍɢ sᴏᴏɴ""",
             parse_mode=ParseMode.MARKDOWN,
             
             reply_markup=InlineKeyboardMarkup(
