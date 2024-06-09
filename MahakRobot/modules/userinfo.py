@@ -465,7 +465,7 @@ def set_about_bio(update: Update, context: CallbackContext):
 
         if user_id == bot.id and sender_id not in DEV_USERS:
             message.reply_text(
-                "⬤ ᴜᴍᴍ... ʏᴇᴀʜ, ɪ ᴏɴʟʏ ᴛʀᴜsᴛ ˹ ᴍᴀʜᴀᴋ ꭙ ʀᴏʙᴏᴛ™ ♡゙ ᴀssᴏᴄɪᴀᴛɪᴏᴍ ᴛᴏ sᴇᴛ ᴍʏ ʙɪᴏ."
+                "⬤ ᴜᴍᴍ... ʏᴇᴀʜ, ɪ ᴏɴʟʏ ᴛʀᴜsᴛ  ᴍᴀʜᴀᴋ ᴀssᴏᴄɪᴀᴛɪᴏᴍ ᴛᴏ sᴇᴛ ᴍʏ ʙɪᴏ."
             )
             return
 
