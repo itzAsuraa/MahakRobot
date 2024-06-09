@@ -46,7 +46,7 @@ def generate_info(client, message):
         
         f"**● ᴢɪᴘᴄᴏᴅᴇ ➥** {zipcode}\n\n"
 
-        f"❖ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ➥ ๛ᴀ ᴠ ɪ s ʜ ᴀ ࿐"
+        f"❖ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ➥ ˹ ᴍᴀʜᴀᴋ ꭙ ʀᴏʙᴏᴛ™ ♡゙"
     )
 ###
     
