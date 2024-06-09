@@ -845,7 +845,7 @@ def Music_about_callback(update: Update, context: CallbackContext):
             ),
         )
     elif query.data == "Music_roy_play":
-        query.message.edit_caption(f"*✿ ᴄᴏᴍᴍᴀɴᴅꜱ ✿*"
+        query.message.edit_caption(f"*✿ ᴄᴏᴍᴍᴀɴᴅꜱ ✿*",
             f"""\n\n ᴄᴏᴍᴍɪɴɢ sᴏᴏɴ""",
             parse_mode=ParseMode.MARKDOWN,
             
