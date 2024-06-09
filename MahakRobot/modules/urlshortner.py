@@ -77,6 +77,6 @@ async def unshort(bot, message):
 __help__ = """
  
  ⬤ /short <url> ➥ `/short google.com`.
- *"""
+ """
 
 __mod_name__ = "sʜᴏʀᴛ"
