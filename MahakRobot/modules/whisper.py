@@ -20,7 +20,7 @@ async def _whisper(_, inline_query):
                 title="💌 ᴡʜɪsᴘᴇʀ",
                 description=f"@{BOT_USERNAME} [ USERNAME | ID ] [ TEXT ]",
                 input_message_content=InputTextMessageContent(f"💌 ᴜsᴀɢᴇ ➥ \n\n@{BOT_USERNAME} [ USERNAME | ID ] [ TEXT ]"),
-                thumb_url="https://graph.org/file/182bc6c2f3693d8a3fd0c.jpg",
+                thumb_url="https://telegra.ph/file/21c69049c4855ac0a035b.jpg",
                 reply_markup=switch_btn
             )
         ]
@@ -39,7 +39,7 @@ async def _whisper(_, inline_query):
                     title="💌 ᴡʜɪsᴘᴇʀ",
                     description="⬤ ɪɴᴠᴀʟɪᴅ ᴜsᴇʀɴᴀᴍᴇ ᴏʀ ɪᴅ !",
                     input_message_content=InputTextMessageContent("⬤ ɪɴᴠᴀʟɪᴅ ᴜsᴇʀɴᴀᴍᴇ ᴏʀ ɪᴅ!"),
-                    thumb_url="https://graph.org/file/182bc6c2f3693d8a3fd0c.jpg",
+                    thumb_url="https://telegra.ph/file/21c69049c4855ac0a035b.jpg",
                     reply_markup=switch_btn
                 )
             ]
@@ -52,7 +52,7 @@ async def _whisper(_, inline_query):
                     title="💌 ᴡʜɪsᴘᴇʀ",
                     description=f"⬤ sᴇɴᴅ ᴀ ᴡʜɪsᴘᴇʀ ᴛᴏ ➥ {user.first_name}",
                     input_message_content=InputTextMessageContent(f"💌 ᴀ ᴡʜɪsᴘᴇʀ ᴍᴇssᴀɢᴇ ᴛᴏ ➥ {user.first_name} ᴏɴʟʏ ʜᴇ/sʜᴇ ᴄᴀɴ ᴏᴘᴇɴ ɪᴛ.\n\n❅ ᴛʏᴘᴇ ʏᴏᴜʀ ᴍᴇssᴀɢᴇ/sᴇɴᴛᴇɴᴄᴇ."),
-                    thumb_url="https://graph.org/file/182bc6c2f3693d8a3fd0c.jpg",
+                    thumb_url="https://telegra.ph/file/21c69049c4855ac0a035b.jpg",
                     reply_markup=whisper_btn
                 ),
                 InlineQueryResultArticle(
