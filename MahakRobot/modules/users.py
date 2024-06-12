@@ -260,7 +260,7 @@ __mod_name__ = "ɢ-ᴄᴀsᴛ"
 __handlers__ = [(USER_HANDLER, USERS_GROUP), CHATLIST_HANDLER]
 
 __help__ = """
-
- ⬤ /buser *➥* ʙʀᴏᴀᴅᴄᴀsᴛs ᴛᴏᴏ ᴀʟʟ ᴜsᴇʀs.
- ⬤ /bchat *➥* ʙʀᴏᴀᴅᴄᴀsᴛs ᴛᴏᴏ ᴀʟʟ ɢʀᴏᴜᴘs.
+ ❍ /buser *➛* ʙʀᴏᴀᴅᴄᴀsᴛs ᴛᴏᴏ ᴀʟʟ ᴜsᴇʀs.
+ ❍ /bchat *➛* ʙʀᴏᴀᴅᴄᴀsᴛs ᴛᴏᴏ ᴀʟʟ ɢʀᴏᴜᴘs.
  """
+    
