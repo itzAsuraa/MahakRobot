@@ -14,7 +14,7 @@ AVISHA = [
     [
         InlineKeyboardButton(
             text="ᴀᴅᴅ ᴍᴇ ʙᴀʙʏ",
-            url=f"https://t.me/Mahakxbot?startgroup=true",
+            url=f"https://t.me/avishaxbot?startgroup=true",
         ),
     ],
 ]
@@ -128,7 +128,6 @@ async def ctest(_, message):
 
     
 __help__ = """
-
  ⬤ /couples ➥ ᴄʜᴏᴏsᴇ 2 ᴜsᴇʀs ᴀɴᴅ sᴇɴᴅ ᴛʜᴇɪʀ ɴᴀᴍᴇ ᴀs ᴄᴏᴜᴘʟᴇs ɪɴ ʏᴏᴜʀ ᴄʜᴀᴛ.
  ⬤ /lov <fristuser seconduser> ➥ sʜᴏᴡ ʟᴏᴠᴇ ᴘᴇʀᴄᴇɴᴛᴀɢᴇ.
 """
