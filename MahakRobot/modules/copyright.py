@@ -40,7 +40,7 @@ async def handle_edited_messages(_, edited_message: Message):
     await delete_long_edited_messages(_, edited_message)
 
 # Delete long messages in groups and reply with a warning
-MAX_MESSAGE_LENGTH = 20  # Define the maximum allowed length for a message
+MAX_MESSAGE_LENGTH = 50  # Define the maximum allowed length for a message
 
 async def delete_long_messages(client, message: Message):
     if message.text and len(message.text.split()) > MAX_MESSAGE_LENGTH:
