@@ -133,12 +133,12 @@ def get_id(update: Update, context: CallbackContext):
 
         if chat.type == "private":
             msg.reply_text(
-                f"⬤ ʏᴏᴜʀ ᴜsᴇʀ ɪᴅ ɪs ➥ <code>`{chat.id}`</code>.", parse_mode=ParseMode.HTML
+                f"⬤ ʏᴏᴜʀ ᴜsᴇʀ ɪᴅ ɪs ➥ <code>{chat.id}</code>.", parse_mode=ParseMode.HTML
             )
 
         else:
             msg.reply_text(
-                f"⬤ ᴛʜɪs ɢʀᴏᴜᴩ's ɪᴅ ɪs ➥ <code>`{chat.id}`</code>.", parse_mode=ParseMode.HTML
+                f"⬤ ᴛʜɪs ɢʀᴏᴜᴩ's ɪᴅ ɪs ➥ <code>{chat.id}</code>.", parse_mode=ParseMode.HTML
             )
 
 
