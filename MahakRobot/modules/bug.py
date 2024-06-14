@@ -23,7 +23,7 @@ def content(msg: Message) -> [None, str]:
         return None
 
 
-@Client.on_message(filters.command("bug"))
+@app.on_message(filters.command("bug"))
 @capture_err
 async def bug(_, msg: Message):
     if msg.chat.username:
@@ -73,7 +73,7 @@ async def bug(_, msg: Message):
                     [[InlineKeyboardButton("• ᴄʟᴏsᴇ •", callback_data=f"close_reply")]]
                 ),
             )
-            await Client.send_photo(
+            await app.send_photo(
                 log,
                 photo=START_IMG,
                 caption=f"{bug_report}",
@@ -94,14 +94,14 @@ async def bug(_, msg: Message):
             )
 
 
-@Client.on_callback_query(filters.regex("close_reply"))
+@app.on_callback_query(filters.regex("close_reply"))
 async def close_reply(msg, CallbackQuery):
     await CallbackQuery.message.delete()
 
 
-@Client.on_callback_query(filters.regex("close_send_photo"))
+@app.on_callback_query(filters.regex("close_send_photo"))
 async def close_send_photo(_, CallbackQuery):
-    is_Admin = await Client.get_chat_member(
+    is_Admin = await app.get_chat_member(
         CallbackQuery.message.chat.id, CallbackQuery.from_user.id
     )
     if not is_Admin.can_delete_messages:
