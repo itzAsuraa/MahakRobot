@@ -5,7 +5,7 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 
 from MahakRobot import OWNER_ID as owner_id
 from MahakRobot import SUPPORT_CHAT as log,BOT_NAME,START_IMG
-from MahakRobot import pbot as Client
+from MahakRobot import pbot as app
 from MahakRobot.utils.errors import capture_err
 
 
