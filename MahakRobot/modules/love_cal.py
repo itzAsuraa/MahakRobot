@@ -1,5 +1,6 @@
 from pyrogram import Client, filters
 import random
+from MahakRobot import BOT_USERNAME
 from MahakRobot import pbot as app
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
@@ -28,7 +29,7 @@ def get_random_message(love_percentage):
 
 EVAA = [
     [
-        InlineKeyboardButton(text="ᴀᴅᴅ ᴍᴇ ʙᴀʙʏ", url=f"https://t.me/mahakxbot?startgroup=true"),
+        InlineKeyboardButton(text="ᴀᴅᴅ ᴍᴇ ʙᴀʙʏ", url=f"https://t.me/{BOT_USERNAME}?startgroup=true"),
     ],
 ]
 
