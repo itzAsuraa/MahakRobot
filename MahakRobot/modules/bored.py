@@ -22,7 +22,7 @@ async def bored_command(client, message):
         activity = data.get("activity")
         if activity:
             
-            await message.reply(f"❖ ғᴇᴇʟɪɴɢ ʙᴏʀᴇᴅ ? ʜᴏᴡ ᴀʙᴏᴜᴛ ⏤͟͟͞͞★\n\n❅ `{activity}`\n\n❖ ғᴇᴇʟɪɴɢ ʙʏ ➥ [˹ᴍᴀʜᴀᴋ ꭙ ʀᴏʙᴏᴛ™ ♡゙](t.me/MahakXbot)", reply_markup=InlineKeyboardMarkup(EVAA),)
+            await message.reply(f"❖ ғᴇᴇʟɪɴɢ ʙᴏʀᴇᴅ ? ʜᴏᴡ ᴀʙᴏᴜᴛ ⏤͟͟͞͞★\n\n❅ `{activity}`\n\n❖ ғᴇᴇʟɪɴɢ ʙʏ ➥ [˹ᴍᴀʜᴀᴋ ꭙ ʀᴏʙᴏᴛ™ ♡゙](@MahakXbot)", reply_markup=InlineKeyboardMarkup(EVAA),)
         else:
             await message.reply("⬤ ɴᴏ ᴀᴄᴛɪᴠɪᴛʏ ғᴏᴜɴᴅ.")
     else:
