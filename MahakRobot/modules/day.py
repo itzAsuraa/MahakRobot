@@ -1,13 +1,14 @@
 from pyrogram import Client, filters
 from pyrogram.types import Message
 from datetime import datetime
+from MahakRobot import BOT_USERNAME
 from MahakRobot import pbot as app
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 
 EVAA = [
     [
-        InlineKeyboardButton(text="ᴀᴅᴅ ᴍᴇ ʙᴀʙʏ", url=f"https://t.me/Mahakxbot?startgroup=true"),
+        InlineKeyboardButton(text="ᴀᴅᴅ ᴍᴇ ʙᴀʙʏ", url=f"https://t.me/{BOT_USERNAME}?startgroup=true"),
     ],
 ]
 
