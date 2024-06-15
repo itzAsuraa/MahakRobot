@@ -4,6 +4,7 @@ from pyrogram.enums import MessageEntityType
 from pyrogram import filters
 from pyrogram.types import Message
 from MahakRobot import pbot as app
+from MahakRobot import BOT_USERNAME
 from MahakRobot.Love.readable_time import get_readable_time
 from MahakRobot.Love.afkdb import add_afk, is_afk, remove_afk
 import random 
@@ -11,7 +12,7 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 EVAA = [
     [
-        InlineKeyboardButton(text="ᴀᴅᴅ ᴍᴇ ʙᴀʙʏ", url=f"https://t.me/Avishaxbot?startgroup=true"),
+        InlineKeyboardButton(text="ᴀᴅᴅ ᴍᴇ ʙᴀʙʏ", url=f"https://t.me/{BOT_USERNAME}?startgroup=true"),
     ],
 ]
 
