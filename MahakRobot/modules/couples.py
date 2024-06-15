@@ -7,7 +7,7 @@ from pyrogram import *
 from pyrogram.types import *
 from pyrogram.enums import *
 from MahakRobot import BOT_USERNAME
-#from MahakRobot import pbot as app
+from MahakRobot import pbot as app
 from MahakRobot.mongo.couples_db import _get_image, get_couple
 
 AVISHA = [
