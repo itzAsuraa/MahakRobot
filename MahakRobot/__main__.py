@@ -324,6 +324,8 @@ def start(update: Update, context: CallbackContext):
                 PM_START_TEX.format(usr.first_name), parse_mode=ParseMode.MARKDOWN
             )
             time.sleep(0.3)
+            lol.edit_text("□□□□□□□□□□ 00%")
+            time.sleep(0.3)
             lol.edit_text("■□□□□□□□□□ 10%")
             time.sleep(0.3)
             lol.edit_text("■■□□□□□□□□ 20%")
@@ -335,7 +337,7 @@ def start(update: Update, context: CallbackContext):
             lol.edit_text("■■■■■□□□□□ 50%")
             time.sleep(0.3)
             lol.edit_text("■■■■■■□□□□ 60%")
-            lol.delete(0.3)
+            time.sleep(0.3)
             lol.edit_text("■■■■■■■□□□ 70%")
             time.sleep(0.3)
             lol.edit_text("■■■■■■■■□□ 80%")
@@ -343,7 +345,7 @@ def start(update: Update, context: CallbackContext):
             lol.edit_text("■■■■■■■■■□ 90%")
             time.sleep(0.3)
             lol.edit_text("■■■■■■■■■■ 100%")
-            lol.delete(0.3)
+            time.sleep(0.3)
             lol.edit_text("ʟᴇᴛ's ɢᴏ...♥︎")
             lol.delete()
             
