@@ -1,6 +1,7 @@
 import random, os
 from pyrogram import Client, filters, enums 
 from MahakRobot import pbot as app
+from MahakRobot import BOT_USERNAME
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 
@@ -16,6 +17,6 @@ async def password(bot, update):
     limit = int(qw)
     random_value = "".join(random.sample(password, limit))
     txt = f"❖ <b>ʟɪᴍɪᴛ ➥</b> {str(limit)} \n\n● <b>ᴘᴀꜱꜱᴡᴏʀᴅ ➥ `<code>{random_value}</code>`\n\n❖ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ➥ ˹ ᴍᴀʜᴀᴋ ꭙ ʀᴏʙᴏᴛ™ ♡゙"
-    btn = InlineKeyboardMarkup([[InlineKeyboardButton(' ᴀᴅᴅ ᴍᴇ ʙᴀʙʏ', url='https://t.me/Mahakxbot?startgroup=true')]])
+    btn = InlineKeyboardMarkup([[InlineKeyboardButton(' ᴀᴅᴅ ᴍᴇ ʙᴀʙʏ', url='https://t.me/{BOT_USERNAME}?startgroup=true')]])
     await message.edit_text(text=txt, reply_markup=btn, parse_mode=enums.ParseMode.HTML)
 
