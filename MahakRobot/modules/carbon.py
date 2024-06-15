@@ -1,6 +1,7 @@
 from pyrogram import filters
 
 from MahakRobot import pbot
+from MahakRobot import BOT_USERNAME
 from MahakRobot.utils.errors import capture_err
 from MahakRobot.utils.functions import make_carbon
 
@@ -8,7 +9,7 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 EVAA = [
     [
-        InlineKeyboardButton(text="ᴀᴅᴅ ᴍᴇ ʙᴀʙʏ", url=f"https://t.me/Mahakxbot?startgroup=true"),
+        InlineKeyboardButton(text="ᴀᴅᴅ ᴍᴇ ʙᴀʙʏ", url=f"https://t.me/{BOT_USERNAME}?startgroup=true"),
     ],
 ]
 
