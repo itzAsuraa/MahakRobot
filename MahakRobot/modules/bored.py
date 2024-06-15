@@ -2,19 +2,17 @@ from pyrogram import Client, filters
 import requests
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 from MahakRobot import pbot as app
-from MahakRobot import BOT_USERNAME
+
 
 EVAA = [
     [
-        InlineKeyboardButton(text="ᴀᴅᴅ ᴍᴇ ʙᴀʙʏ", url=f"https://t.me/{BOT_USERNAME}?startgroup=true"),
+        InlineKeyboardButton(text="ᴀᴅᴅ ᴍᴇ ʙᴀʙʏ", url=f"https://t.me/MahakXbot?startgroup=true"),
     ],
 ]
 
-# URL for the Bored API
+
 bored_api_url = "https://apis.scrimba.com/bored/api/activity"
 
-
-# Function to handle /bored command
 @app.on_message(filters.command("bored", prefixes="/"))
 async def bored_command(client, message):
     # Fetch a random activity from the Bored API
@@ -23,7 +21,7 @@ async def bored_command(client, message):
         data = response.json()
         activity = data.get("activity")
         if activity:
-            # Send the activity to the user who triggered the command
+            
             await message.reply(f"❖ ғᴇᴇʟɪɴɢ ʙᴏʀᴇᴅ ? ʜᴏᴡ ᴀʙᴏᴜᴛ ⏤͟͟͞͞★\n\n❅ `{activity}`\n\n❖ ғᴇᴇʟɪɴɢ ʙʏ ➥ [˹ᴍᴀʜᴀᴋ ꭙ ʀᴏʙᴏᴛ™ ♡゙](t.me/MahakXbot)", reply_markup=InlineKeyboardMarkup(EVAA),)
         else:
             await message.reply("⬤ ɴᴏ ᴀᴄᴛɪᴠɪᴛʏ ғᴏᴜɴᴅ.")
@@ -32,8 +30,7 @@ async def bored_command(client, message):
 
 
 __help__ = """
-
-⬤ /bored * ➥* ɢᴇᴛ ʀᴀɴᴅᴏᴍ ʙᴏʀᴇᴅ ғᴇᴇʟɪɴɢs.
+⬤ /bored ➥ ɢᴇᴛ ʀᴀɴᴅᴏᴍ ʙᴏʀᴇᴅ ғᴇᴇʟɪɴɢs.
 """
 
-__mod_name__ = "ғᴇᴇʟɪɴɢs"
+__mod_name__ = "ʙᴏʀᴇᴅ"
