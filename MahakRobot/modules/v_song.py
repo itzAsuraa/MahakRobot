@@ -12,10 +12,11 @@ from youtubesearchpython import SearchVideos
 from yt_dlp import YoutubeDL
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 from MahakRobot import pbot
+from MahakRobot import BOT_USERNAME
 
 EVAA = [
     [
-        InlineKeyboardButton(text="ᴀᴅᴅ ᴍᴇ ʙᴀʙʏ", url=f"https://t.me/mahakxbot?startgroup=true"),
+        InlineKeyboardButton(text="ᴀᴅᴅ ᴍᴇ ʙᴀʙʏ", url=f"https://t.me/{BOT_USERNAME}?startgroup=true"),
     ],
 ]
 
