@@ -21,7 +21,7 @@ button = [
 @app.on_message(filters.command("animelogo"))
 async def logo(app, msg: Message):
     if len(msg.command) == 1:
-       return await msg.reply_text("⬤ ᴜsᴀɢᴇ ➥ /animelogo Avisha")
+       return await msg.reply_text("⬤ ᴜsᴀɢᴇ ➥ /animelogo Mahak")
     logo_name = msg.text.split(" ", 1)[1]
     API = f"https://api.sdbots.tech/anime-logo?name={logo_name}"
     req = requests.get(API).url
