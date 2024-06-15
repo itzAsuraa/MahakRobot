@@ -1,5 +1,6 @@
 from pyrogram import Client, enums, filters
 import asyncio
+from MahakRobot import BOT_USERNAME
 from MahakRobot import pbot as avisha
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 from pyrogram.handlers import MessageHandler
@@ -7,7 +8,7 @@ from pyrogram.handlers import MessageHandler
 #####
 EVAA = [
     [
-        InlineKeyboardButton(text="ᴀᴅᴅ ᴍᴇ ʙᴀʙʏ", url=f"https://t.me/avishaxbot?startgroup=true"),
+        InlineKeyboardButton(text="ᴀᴅᴅ ᴍᴇ ʙᴀʙʏ", url=f"https://t.me/{BOT_USERNAME}?startgroup=true"),
     ],
 ]
 
