@@ -5,10 +5,11 @@ from pyrogram.errors import PeerIdInvalid
 from pyrogram.types import Message, User
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 from MahakRobot import pbot
+from MahakRobot import BOT_USERNAME
 
 EVAA = [
     [
-        InlineKeyboardButton(text="ᴀᴅᴅ ᴍᴇ ʙᴀʙʏ", url=f"https://t.me/mahakxbot?startgroup=true"),
+        InlineKeyboardButton(text="ᴀᴅᴅ ᴍᴇ ʙᴀʙʏ", url=f"https://t.me/{BOT_USERNAME}?startgroup=true"),
     ],
 ]
 
