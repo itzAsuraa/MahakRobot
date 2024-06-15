@@ -2,10 +2,11 @@ from pyrogram import Client, filters
 import requests
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 from MahakRobot import pbot as app
+from MahakRobot import BOT_USERNAME
 
 EVAA = [
     [
-        InlineKeyboardButton(text="ᴀᴅᴅ ᴍᴇ ʙᴀʙʏ", url=f"https://t.me/Mahakxbot?startgroup=true"),
+        InlineKeyboardButton(text="ᴀᴅᴅ ᴍᴇ ʙᴀʙʏ", url=f"https://t.me/{BOT_USERNAME}?startgroup=true"),
     ],
 ]
 
