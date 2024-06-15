@@ -6,15 +6,15 @@ from PIL import Image , ImageDraw
 from pyrogram import *
 from pyrogram.types import *
 from pyrogram.enums import *
-
-from MahakRobot import pbot as app
+from MahakRobot import BOT_USERNAME
+#from MahakRobot import pbot as app
 from MahakRobot.mongo.couples_db import _get_image, get_couple
 
 AVISHA = [
     [
         InlineKeyboardButton(
             text="ᴀᴅᴅ ᴍᴇ ʙᴀʙʏ",
-            url=f"https://t.me/avishaxbot?startgroup=true",
+            url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
         ),
     ],
 ]
