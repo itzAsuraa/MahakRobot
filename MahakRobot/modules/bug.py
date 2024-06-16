@@ -1,9 +1,12 @@
 from datetime import datetime
-from pyrogram import filters
-from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message, CallbackQuery
-from MahakRobot import OWNER_ID as owner_id
-from MahakRobot import pbot as app
 
+from pyrogram import filters
+from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
+
+from MahakRobot import OWNER_ID as owner_id
+from MahakRobot import SUPPORT_CHAT as log,BOT_NAME,START_IMG
+from MahakRobot import pbot as Client
+from MahakRobot.utils.errors import capture_err
 
 
 def content(msg: Message) -> [None, str]:
@@ -20,8 +23,9 @@ def content(msg: Message) -> [None, str]:
         return None
 
 
-@app.on_message(filters.command("bug"))
-async def bugs(_, msg: Message):
+@Client.on_message(filters.command("bug"))
+@capture_err
+async def bug(_, msg: Message):
     if msg.chat.username:
         chat_username = f"@{msg.chat.username}/`{msg.chat.id}`"
     else:
@@ -66,19 +70,19 @@ async def bugs(_, msg: Message):
                 f"<b>ʙᴜɢ ʀᴇᴩᴏʀᴛ : {bugs}</b>\n\n"
                 "<b>» ʙᴜɢ sᴜᴄᴄᴇssғᴜʟʟʏ ʀᴇᴩᴏʀᴛᴇᴅ ᴀᴛ sᴜᴩᴩᴏʀᴛ ᴄʜᴀᴛ !</b>",
                 reply_markup=InlineKeyboardMarkup(
-                    [[InlineKeyboardButton("⌯ ᴄʟᴏsᴇ ⌯", callback_data="close_data")]]
+                    [[InlineKeyboardButton("• ᴄʟᴏsᴇ •", callback_data=f"close_reply")]]
                 ),
             )
-            await app.send_photo(
-                -1002024991604,
-                photo="https://telegra.ph/file/f66e5843568d4b7f2a652.jpg",
+            await Client.send_photo(
+                log,
+                photo=START_IMG,
                 caption=f"{bug_report}",
                 reply_markup=InlineKeyboardMarkup(
                     [
-                        [InlineKeyboardButton("⌯ ᴠɪᴇᴡ ʙᴜɢ ⌯", url=f"{msg.link}")],
+                        [InlineKeyboardButton("• ᴠɪᴇᴡ ʙᴜɢ •", url=f"{msg.link}")],
                         [
                             InlineKeyboardButton(
-                                "⌯ ᴄʟᴏsᴇ ⌯", callback_data="close_send_photo"
+                                "• ᴄʟᴏsᴇ •", callback_data="close_send_photo"
                             )
                         ],
                     ]
@@ -90,12 +94,26 @@ async def bugs(_, msg: Message):
             )
 
 
+@Client.on_callback_query(filters.regex("close_reply"))
+async def close_reply(msg, CallbackQuery):
+    await CallbackQuery.message.delete()
 
 
-@app.on_callback_query(filters.regex("close_send_photo"))
-async def close_send_photo(_,  query :CallbackQuery):
-    is_admin = await app.get_chat_member(query.message.chat.id, query.from_user.id)
-    if not is_admin.privileges.can_delete_messages:
-        await query.answer("ʏᴏᴜ ᴅᴏɴ'ᴛ ʜᴀᴠᴇ ʀɪɢʜᴛs ᴛᴏ ᴄʟᴏsᴇ ᴛʜɪs.", show_alert=True)
+@Client.on_callback_query(filters.regex("close_send_photo"))
+async def close_send_photo(_, CallbackQuery):
+    is_Admin = await Client.get_chat_member(
+        CallbackQuery.message.chat.id, CallbackQuery.from_user.id
+    )
+    if not is_Admin.can_delete_messages:
+        return await CallbackQuery.answer(
+            "ʏᴏᴜ ᴅᴏɴ'ᴛ ʜᴀᴠᴇ ʀɪɢʜᴛs ᴛᴏ ᴄʟᴏsᴇ ᴛʜɪs.", show_alert=True
+        )
     else:
-        await query.message.delete()
+        await CallbackQuery.message.delete()
+
+
+__help__ = """
+*ғᴏʀ ʀᴇᴩᴏʀᴛɪɴɢ ᴀ ʙᴜɢ *
+ ❍ /bug *:* ᴛᴏ ʀᴇᴩᴏʀᴛ ᴀ ʙᴜɢ ᴀᴛ sᴜᴩᴩᴏʀᴛ ᴄʜᴀᴛ.
+"""
+__mod_name__ = "Bᴜɢ"
