@@ -80,7 +80,7 @@
     "TIME_API_KEY": {
         "description": " Get your API key from https://timezonedb.com/api",
         "required": false,
-        "value": ""
+        "value": "LQ04223P6WGS"
     },         
     "START_IMG": {
        "description": "Telegraph link of the image which will be shown at start command.",
