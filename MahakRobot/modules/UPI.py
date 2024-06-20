@@ -28,7 +28,7 @@ def validate_vpa(update: Update, context: CallbackContext):
         context.bot.send_message(chat_id=update.effective_chat.id, text=response.text)
 
 # Command handler registration
-dispatcher.add_handler(CommandHandler("validatevpa", validate_vpa))
+dispatcher.add_handler(CommandHandler("validatevpa", validate_vpa, run_async=True))
 
 # Start the bot
 updater.start_polling()
