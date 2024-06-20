@@ -1,14 +1,16 @@
 import requests
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
-from telegram.ext import Updater, CommandHandler, MessageHandler, Filters, CallbackContext
+from telegram.ext import Updater,  MessageHandler, Filters
 from MahakRobot import TOKEN 
-
+from MahakRobot.modules.disable import DisableAbleCommandHandler
+from telegram.ext import CallbackContext, CommandHandler, 
+from MahakRobot import dispatcher
 
 updater = Updater(token=TOKEN, use_context=True)
 dispatcher = updater.dispatcher
 
-# Handler for /info <URL> command
-def handle_info_command(update: Update, context: CallbackContext):
+# Handler for /terabox <URL> command
+def handle_terabox_command(update: Update, context: CallbackContext):
     chat_id = update.message.chat_id
     command_parts = update.message.text.split(maxsplit=1)
 
@@ -72,8 +74,7 @@ def handle_info_command(update: Update, context: CallbackContext):
         )
 
 # Command handler registration
-dispatcher.add_handler(CommandHandler("info", handle_info_command))
+dispatcher.add_handler(CommandHandler("terabox", handle_terabox_command, run_async=True))
 
-# Start the bot
 updater.start_polling()
 updater.idle()
