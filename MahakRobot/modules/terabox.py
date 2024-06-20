@@ -3,7 +3,7 @@ from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import Updater,  MessageHandler, Filters
 from MahakRobot import TOKEN 
 from MahakRobot.modules.disable import DisableAbleCommandHandler
-from telegram.ext import CallbackContext, CommandHandler, 
+from telegram.ext import CallbackContext, CommandHandler
 from MahakRobot import dispatcher
 
 updater = Updater(token=TOKEN, use_context=True)
