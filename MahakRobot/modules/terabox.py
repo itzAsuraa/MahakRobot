@@ -30,23 +30,16 @@ def handle_terabox_command(update: Update, context: CallbackContext):
                 if not fast_download_link or not hd_video_link:
                     raise Exception("Download links not found.")
 
-                # Shorten links using TinyURL API
-                tinyurl_api = "http://tinyurl.com/api-create.php?url="
-                shortened_fast_download_link = requests.get(tinyurl_api + fast_download_link).text
-                shortened_hd_video_link = requests.get(tinyurl_api + hd_video_link).text
-
                 # Create inline keyboard markup
                 reply_markup = InlineKeyboardMarkup([
                     [
-                        InlineKeyboardButton(text='➡️ Fast Download', url=shortened_fast_download_link),
-                        InlineKeyboardButton(text='▶️ HD Video', url=shortened_hd_video_link)
-                    ],
+                        InlineKeyboardButton(text= ᴅɪʀᴇᴄᴛ ᴅᴏᴡɴʟᴏᴀᴅ ʟɪɴᴋ', url=fast_download_link),
                     [
                         InlineKeyboardButton(text='Developer', url='https://t.me/itz_Asuraa')
                     ]
                 ])
 
-                message_text = f"🎬 <b>Title:</b> {video_title}\nMade with ❤️ by @itz_Asuraa"
+                message_text = f"🎬 <b>Title:</b> {video_title}"
 
                 context.bot.send_photo(
                     chat_id=chat_id,
@@ -58,19 +51,19 @@ def handle_terabox_command(update: Update, context: CallbackContext):
             else:
                 context.bot.send_message(
                     chat_id=chat_id,
-                    text="❌ <b>Error fetching data from Terabox API</b>",
+                    text=" <b>Error fetching data from Terabox API</b>",
                     parse_mode="HTML"
                 )
         except Exception as e:
             context.bot.send_message(
                 chat_id=chat_id,
-                text=f"❌ <b>Error: {str(e)}</b>",
+                text=f" <b>Error: {str(e)}</b>",
                 parse_mode="HTML"
             )
     else:
         context.bot.send_message(
             chat_id=chat_id,
-            text="ℹ️ Please provide a valid URL after /info command."
+            text="ℹ Please provide a valid URL after /terabox command."
         )
 
 # Command handler registration
