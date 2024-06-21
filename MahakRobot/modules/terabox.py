@@ -28,7 +28,7 @@ def handle_terabox_command(update: Update, context: CallbackContext):
                 video_title = data["response"][0]["title"]
 
                 if not fast_download_link or not hd_video_link:
-                    raise Exception("Download links not found.")
+                    raise Exception("{message.from_user.mention} Download links not found.")
 
                 # Create inline keyboard markup
                 reply_markup = InlineKeyboardMarkup([
