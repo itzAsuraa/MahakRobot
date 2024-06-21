@@ -35,7 +35,7 @@ def handle_terabox_command(update: Update, context: CallbackContext):
                     [
                         InlineKeyboardButton(text= ᴅɪʀᴇᴄᴛ ᴅᴏᴡɴʟᴏᴀᴅ ʟɪɴᴋ', url=fast_download_link),
                     [
-                        InlineKeyboardButton(text='Developer', url='https://t.me/itz_Asuraa')
+                        InlineKeyboardButton(text='ᴏᴡɴᴇʀ', url='https://t.me/itz_Asuraa')
                     ]
                 ])
 
@@ -63,7 +63,7 @@ def handle_terabox_command(update: Update, context: CallbackContext):
     else:
         context.bot.send_message(
             chat_id=chat_id,
-            text="ℹ Please provide a valid URL after /terabox command."
+            text="Please provide a valid URL after /terabox command."
         )
 
 # Command handler registration
