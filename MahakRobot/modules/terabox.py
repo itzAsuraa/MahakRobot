@@ -33,7 +33,7 @@ def handle_terabox_command(update: Update, context: CallbackContext):
                 # Create inline keyboard markup
                 reply_markup = InlineKeyboardMarkup([
                     [
-                        InlineKeyboardButton(text= ᴅɪʀᴇᴄᴛ ᴅᴏᴡɴʟᴏᴀᴅ ʟɪɴᴋ', url=fast_download_link),
+                        InlineKeyboardButton(text='ᴅɪʀᴇᴄᴛ ᴅᴏᴡɴʟᴏᴀᴅ ʟɪɴᴋ', url=fast_download_link),
                     [
                         InlineKeyboardButton(text='ᴏᴡɴᴇʀ', url='https://t.me/itz_Asuraa')
                     ]
