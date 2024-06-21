@@ -39,7 +39,7 @@ def handle_terabox_command(update: Update, context: CallbackContext):
                     ]
                 ])
 
-                message_text = f"🎬 <b>Title:</b> {video_title}"
+                message_text = f" {message.from_user.mention} 🎬 <b>Title:</b> {video_title}"
 
                 context.bot.send_photo(
                     chat_id=chat_id,
@@ -51,7 +51,7 @@ def handle_terabox_command(update: Update, context: CallbackContext):
             else:
                 context.bot.send_message(
                     chat_id=chat_id,
-                    text=" <b>Error fetching data from Terabox API</b>",
+                    text=" <b> {message.from_user.mention} Error fetching data from Terabox API</b>",
                     parse_mode="HTML"
                 )
         except Exception as e:
@@ -63,7 +63,7 @@ def handle_terabox_command(update: Update, context: CallbackContext):
     else:
         context.bot.send_message(
             chat_id=chat_id,
-            text="Please provide a valid URL after /terabox command."
+            text=" {message.from_user.mention}  Please provide a valid URL after /terabox command."
         )
 
 # Command handler registration
