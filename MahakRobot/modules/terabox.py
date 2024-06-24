@@ -1,9 +1,8 @@
 import requests
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
-from telegram.ext import Updater,  MessageHandler, Filters
+from telegram.ext import Updater, MessageHandler, Filters, CallbackContext, CommandHandler
 from MahakRobot import TOKEN 
 from MahakRobot.modules.disable import DisableAbleCommandHandler
-from telegram.ext import CallbackContext, CommandHandler
 from MahakRobot import dispatcher
 
 updater = Updater(token=TOKEN, use_context=True)
@@ -28,18 +27,17 @@ def handle_terabox_command(update: Update, context: CallbackContext):
                 video_title = data["response"][0]["title"]
 
                 if not fast_download_link or not hd_video_link:
-                    raise Exception("{message.from_user.mention} Download links not found.")
+                    raise Exception(f"{update.message.from_user.mention} Download links not found.")
 
                 # Create inline keyboard markup
                 reply_markup = InlineKeyboardMarkup([
                     [
                         InlineKeyboardButton(text='ᴅɪʀᴇᴄᴛ ᴅᴏᴡɴʟᴏᴀᴅ ʟɪɴᴋ', url=fast_download_link),
-                    [
                         InlineKeyboardButton(text='ᴏᴡɴᴇʀ', url='https://t.me/itz_Asuraa')
-                    [
-                    ])
+                    ]
+                ])
 
-                message_text = f" {message.from_user.mention} 🎬 <b>Title:</b> {video_title}"
+                message_text = f"{update.message.from_user.mention} 🎬 <b>Title:</b> {video_title}"
 
                 context.bot.send_photo(
                     chat_id=chat_id,
@@ -51,19 +49,19 @@ def handle_terabox_command(update: Update, context: CallbackContext):
             else:
                 context.bot.send_message(
                     chat_id=chat_id,
-                    text=" <b> {message.from_user.mention} Error fetching data from Terabox API</b>",
+                    text=f"<b>{update.message.from_user.mention} Error fetching data from Terabox API</b>",
                     parse_mode="HTML"
                 )
         except Exception as e:
             context.bot.send_message(
                 chat_id=chat_id,
-                text=f" <b>Error: {str(e)}</b>",
+                text=f"<b>Error: {str(e)}</b>",
                 parse_mode="HTML"
             )
     else:
         context.bot.send_message(
             chat_id=chat_id,
-            text=" {message.from_user.mention}  Please provide a valid URL after /terabox command."
+            text=f"{update.message.from_user.mention} Please provide a valid URL after /terabox command."
         )
 
 # Command handler registration
