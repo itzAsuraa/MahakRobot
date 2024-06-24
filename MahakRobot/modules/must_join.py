@@ -9,7 +9,7 @@ MUST_JOIN = "Ravan_Lankaa"
 #------------------------
 
 NYKAA = [
-    " https://telegra.ph/file/29d8090609657477f4065.jpg",
+    "https://telegra.ph/file/7128f31a5c9bac31c7863.jpg",
 ]
 
 async def check_user_join_channel(user_id):
