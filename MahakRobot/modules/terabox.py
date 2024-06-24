@@ -36,6 +36,7 @@ def handle_terabox_command(update: Update, context: CallbackContext):
                         InlineKeyboardButton(text='ᴅɪʀᴇᴄᴛ ᴅᴏᴡɴʟᴏᴀᴅ ʟɪɴᴋ', url=fast_download_link),
                     [
                         InlineKeyboardButton(text='ᴏᴡɴᴇʀ', url='https://t.me/itz_Asuraa')
+                    [
                     ])
 
                 message_text = f" {message.from_user.mention} 🎬 <b>Title:</b> {video_title}"
