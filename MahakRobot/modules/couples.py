@@ -12,7 +12,7 @@ from MahakRobot.mongo.couples_db import _get_image, get_couple
 AVISHA = [
     [
         InlineKeyboardButton(
-            text="ᴀᴅᴅ ᴍᴇ ʙᴀʙʏ", url=f"https://t.me/MahakXbot?startgroup=true",),
+            text="ᴀᴅᴅ ᴍᴇ ʙᴀʙʏ", url=f"https://t.me/mahakxbot?startgroup=true",),
     ],
 ]
 def dt():
