@@ -9,7 +9,7 @@ from pyrogram.enums import *
 from MahakRobot import pbot as app
 from MahakRobot.mongo.couples_db import _get_image, get_couple
 
-AVISHA = [
+MAHAK = [
     [
         InlineKeyboardButton(
             text="ᴀᴅᴅ ᴍᴇ ʙᴀʙʏ", url=f"https://t.me/mahakxbot?startgroup=true",),
@@ -107,7 +107,7 @@ async def ctest(_, message):
 ❖ ɴᴇxᴛ ᴄᴏᴜᴘʟᴇs sᴇʟᴇᴄᴛᴇᴅ ᴏɴ `{tomorrow}`
 """
     
-         await message.reply_photo(f"test_{cid}.png", caption=TXT, reply_markup=InlineKeyboardMarkup(AVISHA),
+         await message.reply_photo(f"test_{cid}.png", caption=TXT, reply_markup=InlineKeyboardMarkup(MAHAK),
     )
          await msg.delete()
          a = upload_file(f"test_{cid}.png")
