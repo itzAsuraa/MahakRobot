@@ -10,7 +10,7 @@ from telethon import __version__ as tver
 
 from MahakRobot import SUPPORT_CHAT, pbot,BOT_USERNAME, OWNER_ID,BOT_NAME,START_IMG
 
-MISHI = [
+Aaru = [
     "https://graph.org/file/f86b71018196c5cfe7344.jpg",
     "https://graph.org/file/a3db9af88f25bb1b99325.jpg",
     "https://graph.org/file/5b344a55f3d5199b63fa5.jpg",
@@ -62,7 +62,7 @@ async def restart(client, m: Message):
     await umm.delete()
     await asyncio.sleep(0.2)
     await m.reply_photo(
-        random.choice(MISHI),
+        random.choice(Aaru),
         caption=f"""**❖ ʜᴇʏ, ɪ ᴀᴍ [{BOT_NAME}](f"t.me/{BOT_USERNAME}") **\n\n● **ʟɪʙʀᴀʀʏ ➥** `{lver}`\n● **ᴛᴇʟᴇᴛʜᴏɴ ➥** `{tver}`\n● **ᴘʏʀᴏɢʀᴀᴍ ➥** `{pver}`\n● **ᴘʏᴛʜᴏɴ ➥** `{pyver()}`\n\n❖ **ᴘᴏᴡᴇʀᴇᴅ ʙʏ ➥** [ᴄᴀᴘᴛᴀɪɴ](tg://user?id={OWNER_ID})""",
         reply_markup=InlineKeyboardMarkup(Mahak),
     )
