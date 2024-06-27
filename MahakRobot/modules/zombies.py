@@ -5,7 +5,7 @@ from telethon.errors import ChatAdminRequiredError, UserAdminInvalidError
 from telethon.tl.functions.channels import EditBannedRequest
 from telethon.tl.types import ChannelParticipantsAdmins, ChatBannedRights
 
-from MahakRobot import DEMONS, DEV_USERS, DRAGONS, OWNER_ID, telethn
+from AvishaRobot import DEMONS, DEV_USERS, DRAGONS, OWNER_ID, telethn
 
 # =================== CONSTANT ===================
 
@@ -105,4 +105,3 @@ __help__ = """
 
 
 __mod_name__ = "ᴢᴏᴍʙɪᴇ"
-  
