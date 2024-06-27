@@ -1,4 +1,4 @@
-# Avisha Example plugin format
+# Mahak Example plugin format
 
 ## Advanced: Pyrogram
 ```python3
