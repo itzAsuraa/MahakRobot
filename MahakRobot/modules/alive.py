@@ -35,7 +35,7 @@ Avisha = [
     [
         InlineKeyboardButton(
             text="ᴀᴅᴅ ᴍᴇ", url=f"https://t.me/{BOT_USERNAME}?startgroup=true"),
-        InlineKeyboardButton(text="ᴜᴘᴅᴀᴛᴇ", url=f"https://t.me/god_ravana")
+        InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/Ravan_Lankaa")
     ],
 ]
 
