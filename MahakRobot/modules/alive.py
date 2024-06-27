@@ -31,7 +31,7 @@ MISHI = [
     "https://graph.org/file/3514efaabe774e4f181f2.jpg",
 ]
 
-Avisha = [
+Mahak = [
     [
         InlineKeyboardButton(
             text="ᴀᴅᴅ ᴍᴇ", url=f"https://t.me/{BOT_USERNAME}?startgroup=true"),
