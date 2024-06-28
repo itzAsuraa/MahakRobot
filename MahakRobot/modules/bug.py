@@ -42,7 +42,7 @@ async def bug(_, msg: Message):
     
 
     bug_report = f"""
-**#ʙᴜɢ : ** **tg://user?id={owner_id}**
+**#ʙᴜɢ : ** **[ᴛʜᴇ ᴄᴀᴘᴛᴀɪɴ](tg://user?id={owner_id})**
 
 **ʀᴇᴩᴏʀᴛᴇᴅ ʙʏ : ** **{mention}**
 **ᴜsᴇʀ ɪᴅ : ** **{user_id}**
