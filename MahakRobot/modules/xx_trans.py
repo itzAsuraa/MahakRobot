@@ -79,8 +79,7 @@ async def repo(client, message):
                         "ᴏᴡɴᴇʀ",user_id=OWNER_ID
                     ),
                     InlineKeyboardButton(
-                        "ʀᴇᴘᴏ",
-                        callback_data="gib_source",
+                        "ʀᴇᴘᴏ", url=f"https://github.com/itzAsuraa/MahakRobot")
                     ),
                 ]
             ]
