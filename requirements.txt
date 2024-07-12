@@ -62,7 +62,7 @@ pyfiglet
 MukeshAPI
 unidecode
 openai==1.31.0
-numpy==1.26.4
+numpy
 pycountry
 blackpink 
 qrcode
