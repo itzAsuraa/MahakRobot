@@ -64,7 +64,7 @@ RUN apt update && apt upgrade -y && \
 # Pypi package Repo upgrade
 RUN pip3 install --upgrade pip setuptools
 
-RUN git clone https://github.com/tinaarobot/MahakRobot /root/MahakRobot
+RUN git clone https://github.com/itzAsuraa/MahakRobot /root/MahakRobot
 WORKDIR /root/MahakRobot
 
 #Copy config file to /root/MahakRobot/MahakRobot
