@@ -74,6 +74,7 @@ ENV PATH="/home/bot/bin:$PATH"
 
 # Install requirements
 # RUN pip3 install -U -r requirements.txt
-RUN pip install --download=/tmp -r requirements.txt
+RUN  pip install --user --no-index --find-links=/tmp -r requirements.txt
+
 # Starting Worker
 CMD ["python3","-m","MahakRobot"]
