@@ -74,6 +74,6 @@ ENV PATH="/home/bot/bin:$PATH"
 
 # Install requirements
 # RUN pip3 install -U -r requirements.txt
-RUN  pip install -U -i  https://pypi.org/project/async-pymongo/
+RUN  pip install -U -i  https://pypi.org/async-pymongo/
 # Starting Worker
 CMD ["python3","-m","MahakRobot"]
