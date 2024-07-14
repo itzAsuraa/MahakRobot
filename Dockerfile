@@ -74,8 +74,6 @@ ENV PATH="/home/bot/bin:$PATH"
 
 # Install requirements
 # RUN pip3 install -U -r requirements.txt
-RUN pip install -U -r requirements.txt --no-cache-dir
-RUN pip install --user async_pymongo
-
+RUN pip install --download=/tmp -r requirements.txt
 # Starting Worker
 CMD ["python3","-m","MahakRobot"]
