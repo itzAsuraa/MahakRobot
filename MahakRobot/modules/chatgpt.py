@@ -2,7 +2,7 @@ import requests
 from MahakRobot import telethn as tbot
 from MahakRobot.events import register
 
-GPT_API_URL = "https://chatgpt.apinepdev.workers.dev"
+GPT_API_URL = "https://chatgpt.apiitzasuraa.workers.dev/"
 
 
 @register(pattern="^/ask (.*)")
