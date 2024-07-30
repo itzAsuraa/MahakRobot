@@ -6,20 +6,17 @@ import asyncio
 from platform import python_version as y
 from sys import argv
 from pyrogram import __version__ as pyrover
-#from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update
-from telegram import InlineKeyboardButton, InlineKeyboardMarkup, Update
-from telegram.constants import ParseMode
+from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update
 from telegram import __version__ as telever
-#from telegram.error import (
-#    BadRequest,
-#    ChatMigrated,
-#    NetworkError,
-#    TelegramError,
-#    TimedOut,
-#    Unauthorized,
-#)
-from telegram.error import (BadRequest, TimedOut, NetworkError, ChatMigrated, TelegramError)
-from telegram import error
+from telegram.error import (
+    BadRequest,
+    ChatMigrated,
+    NetworkError,
+    TelegramError,
+    TimedOut,
+    Unauthorized,
+)
+
 
 from telegram.ext import (
     CallbackContext,
