@@ -11,13 +11,13 @@ from telegram import InlineKeyboardButton, InlineKeyboardMarkup, Update
 from telegram.constants import ParseMode
 from telegram import __version__ as telever
 #from telegram.error import (
-    BadRequest,
-    ChatMigrated,
-    NetworkError,
-    TelegramError,
-    TimedOut,
-    Unauthorized,
-)
+#    BadRequest,
+#    ChatMigrated,
+#    NetworkError,
+#    TelegramError,
+#    TimedOut,
+#    Unauthorized,
+#)
 from telegram.error import (BadRequest, TimedOut, NetworkError, ChatMigrated, TelegramError)
 from telegram import error
 
