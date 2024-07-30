@@ -10,7 +10,7 @@ from pyrogram import __version__ as pyrover
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, Update
 from telegram.constants import ParseMode
 from telegram import __version__ as telever
-from telegram.error import (
+#from telegram.error import (
     BadRequest,
     ChatMigrated,
     NetworkError,
@@ -18,6 +18,9 @@ from telegram.error import (
     TimedOut,
     Unauthorized,
 )
+from telegram.error import (BadRequest, TimedOut, NetworkError, ChatMigrated, TelegramError)
+from telegram import error
+
 from telegram.ext import (
     CallbackContext,
     CallbackQueryHandler,
