@@ -148,7 +148,7 @@ def bot(**args):
     return decorator
 
 
-def avisharobot(**args):
+def mahakrobot(**args):
     pattern = args.get("pattern", None)
     args.get("disable_edited", False)
     ignore_unsafe = args.get("ignore_unsafe", False)
