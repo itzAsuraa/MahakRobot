@@ -6,7 +6,7 @@ from pyrogram.types import Message
 from MahakRobot import pbot as app
 from MahakRobot import BOT_USERNAME
 from MahakRobot.Love.readable_time import get_readable_time
-from MahakRobot.Love.afkdb import add_afk, is_afk, remove_afk
+from MahakRobot.database.afkdb import add_afk, is_afk, remove_afk
 import random 
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
