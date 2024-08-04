@@ -532,7 +532,7 @@ def Avisha_about_callback(update: Update, context: CallbackContext):
             parse_mode=ParseMode.MARKDOWN,
             timeout=60,
         )
-def AvishaRobot_Main_Callback(update: Update, context: CallbackContext):
+def MahakRobot_Main_Callback(update: Update, context: CallbackContext):
     query = update.callback_query
     if query.data == "Main_help":
         query.message.edit_caption(f"""
