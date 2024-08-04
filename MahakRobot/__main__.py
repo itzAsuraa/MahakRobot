@@ -1219,8 +1219,8 @@ def main():
     music_callback_handler = CallbackQueryHandler(
         Music_about_callback, pattern=r"Music_",run_async=True
     )
-    avisharobot_main_handler = CallbackQueryHandler(
-        AvishaRobot_Main_Callback, pattern=r".*_help",run_async=True)
+    mahakrobot_main_handler = CallbackQueryHandler(
+       MahakRobot_Main_Callback, pattern=r".*_help",run_async=True)
     donate_handler = CommandHandler("donate", donate)
     migrate_handler = MessageHandler(Filters.status_update.migrate, migrate_chats)
     dispatcher.add_handler(start_handler)
@@ -1232,7 +1232,7 @@ def main():
     dispatcher.add_handler(settings_callback_handler)
     dispatcher.add_handler(migrate_handler)
     dispatcher.add_handler(donate_handler)
-    dispatcher.add_handler(avisharobot_main_handler)
+    dispatcher.add_handler(mahakrobot_main_handler)
     dispatcher.add_error_handler(error_callback)
     dispatcher.add_handler(source_callback_handler)
     LOGGER.info("Using long polling.")
