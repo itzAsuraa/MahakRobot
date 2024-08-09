@@ -16,7 +16,7 @@ from telegram.utils.helpers import escape_markdown, mention_html
 from telethon import events
 from telethon.tl.functions.channels import GetFullChannelRequest
 from telethon.tl.types import ChannelParticipantsAdmins
-from MahakRobot.modules.alive import Avisha
+from MahakRobot.modules.alive import Mahak
 import MahakRobot.modules.sql.userinfo_sql as sql
 from MahakRobot import (
     DEMONS,
