@@ -20,6 +20,7 @@ RUN apt update && apt upgrade -y && \
     libjpeg-dev \
     libjpeg62-turbo-dev \
     libwebp-dev \
+    libgl1-mesa-glx \
     linux-headers-amd64 \
     musl-dev \
     musl \
