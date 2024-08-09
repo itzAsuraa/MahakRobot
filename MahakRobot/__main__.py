@@ -111,7 +111,7 @@ buttons = [
         ),
     ],
     [
-        InlineKeyboardButton(text="ʀᴇᴘᴏ", callback_data="gib_source"),
+        InlineKeyboardButton(text="ᴅᴇᴠᴇʟᴏᴘᴇʀ", url=f"https://t.me/itzAsuraa"),
         InlineKeyboardButton(text="ᴀʙᴏᴜᴛ", callback_data="avisha_"),
     ],
     [
