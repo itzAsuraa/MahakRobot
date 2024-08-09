@@ -562,7 +562,7 @@ def MahakRobot_Main_Callback(update: Update, context: CallbackContext):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data="Main_help"),InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ", callback_data="avisha_support")
+                        InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data="source_"),InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ", callback_data="avisha_support")
                     ]
                 ]
             ),
@@ -599,7 +599,7 @@ def MahakRobot_Main_Callback(update: Update, context: CallbackContext):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data="Main_help"),InlineKeyboardButton(text="ꜱᴜᴘᴘᴏʀᴛ", callback_data="avisha_support")
+                        InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data="source_"),InlineKeyboardButton(text="ꜱᴜᴘᴘᴏʀᴛ", callback_data="avisha_support")
                     ]
                 ]
             ),
@@ -612,7 +612,7 @@ def MahakRobot_Main_Callback(update: Update, context: CallbackContext):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data="Main_help"),InlineKeyboardButton(text="ᴇxᴛʀᴀ", callback_data="avisha_support")
+                        InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data="source_"),InlineKeyboardButton(text="ᴇxᴛʀᴀ", callback_data="avisha_support")
                     ]
                 ]
             ),
@@ -882,7 +882,7 @@ def Music_about_callback(update: Update, context: CallbackContext):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton(text=" ʙᴀᴄᴋ ", callback_data="Music_roy"),InlineKeyboardButton(text="ʜᴏᴍᴇ", callback_data="Main_help")
+                        InlineKeyboardButton(text=" ʙᴀᴄᴋ ", callback_data="source_"),InlineKeyboardButton(text="ʜᴏᴍᴇ", callback_data="Main_help")
                     ]
                 ]
             ),
