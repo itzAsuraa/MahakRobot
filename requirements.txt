@@ -1,3 +1,4 @@
+opencv-python
 aiofiles==23.2.1
 aiohttp==3.9.2
 apscheduler==3.6.3
