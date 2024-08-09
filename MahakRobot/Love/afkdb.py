@@ -1,4 +1,4 @@
-from MahakRobot.love.mongo import db
+from MahakRobot.Love.mongo import db
 
 afkdb = db.afk
 
